@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Database Management</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <h1>Employee Database Management</h1>
+            <div>
+                <button class="createEmployee">Add Employee</button>
+                <button class="editEmployee">Edit Employee</button>
+            </div>
+        </header>
+    </div>
+
+    <div class="employees">
+        <div class="employees__names">
+            <span class="employees__names--title">Employee List</span>
+            <div class="employees__names--list"></div>
+        </div>
+        <div class="employees__single">
+            <span class="employees__single--title">Employee Information</span>
+            <div class="employees__single--info"></div>
+        </div>
+
+    </div>
+    <!-- Add Employee Modal -->
+    <div class="addEmployee">
+        <form class="addEmployee_create">
+            <span class="form_heading">Add New Employee</span>
+            <div>
+                <input type="text" name="firstName" placeholder="First Name" required />
+                <input type="text" name="lastName" placeholder="Last Name" required />
+                <input type="text" name="imageUrl" placeholder="Image URL" />
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="number" name="contactNumber" placeholder="Contact" required />
+                <input type="number" name="salary" placeholder="Salary" required />
+                <input type="text" name="address" placeholder="Address" required />
+                <input type="date" name="dob" placeholder="Date of Birth" class="addEmployee_create--dob" required />
+                <input type="submit" class="addEmployee_create--submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
